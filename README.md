@@ -6,9 +6,11 @@ Save the file and name it `wifi-switch.sh` for example. Make it executable by ty
 `chmod +x wifi-switch.sh`
 
 Open crontab editor
+
 `sudo crontab -e`
 
 Paste the following line :
+
 `*/5 * * * * root /home/pi/ wifi-switch.sh`
 
 Save the change by typing CTR+X
