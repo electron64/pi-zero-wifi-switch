@@ -11,7 +11,7 @@ Open crontab editor
 
 Paste the following line :
 
-`*/5 * * * * root /home/pi/ wifi-switch.sh`
+`*/5 * * * * root /home/pi/wifi-switch.sh`
 
 Save the change by typing CTR+X
 
