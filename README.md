@@ -2,18 +2,15 @@
 Simple bash script that allow to switch between wifi networks if internet connection down in your Raspberry Pi Zero.
 
 # How to use
-Save the file and name it wifiswitch for example. Make it executable by type in cmdline :
+Save the file and name it `wifiswitch.sh` for example. Make it executable by type in cmdline :
 
-chmod +x wifiswitch
-As root or using sudo, move the file to /usr/local/bin :
+`chmod +x wifiswitch.sh`
 
-mv wifiswitch /usr/local/bin
-Using sudo or root, open a new file in /etc/cron.d
-
-nano /etc/cron.d/wifiswitch
+Open crontab editor
+`sudo crontab -e`
 Press i Copy the the following line :
 
-*/10 * * * * root /usr/local/bin/wifiswitch
-Save the change by typing :x
+`*/5 * * * * root /home/pi/ wifiswitch.sh`
+Save the change by typing CTR+X
 
-Restart Raspberry Pi.
+Test it and enjoy :)
